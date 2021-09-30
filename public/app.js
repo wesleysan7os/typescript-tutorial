@@ -21,22 +21,14 @@ form.addEventListener('submit', (e) => {
     }
     list.render(doc, type.value, 'end');
 });
-var ResourceType;
-(function (ResourceType) {
-    ResourceType[ResourceType["BOOK"] = 0] = "BOOK";
-    ResourceType[ResourceType["AUTHOR"] = 1] = "AUTHOR";
-    ResourceType[ResourceType["FILM"] = 2] = "FILM";
-    ResourceType[ResourceType["DIRECTOR"] = 3] = "DIRECTOR";
-    ResourceType[ResourceType["PERSON"] = 4] = "PERSON";
-})(ResourceType || (ResourceType = {}));
-const docThree = {
-    uid: 1,
-    resourceName: ResourceType.AUTHOR,
-    data: { name: 'shaun' }
-};
-const docFour = {
-    uid: 1,
-    resourceName: ResourceType.DIRECTOR,
-    data: ['bread', 'milk']
-};
-console.log(docThree, docFour);
+// tuples
+let arr = ['ryu', 25, true];
+arr[0] = false;
+arr[1] = 'yoshi';
+arr = [30, false, 'yoshi'];
+let tup = ['ryu', 25, true];
+// tup[0] = false;
+tup[0] = 'ken';
+let student;
+//student = [23564, 'chun-li'];
+student = ['chun-li', 23564];
